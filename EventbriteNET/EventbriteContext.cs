@@ -142,5 +142,19 @@ namespace EventbriteNET
 
             return handler;
         }
+
+        //Access Codes methods
+        public PagedAccessCodes GetAccessCodesForEvent(long id)
+        {
+            var handler = (AccessCodeRequestHandler)GetHandler(typeof(AccessCode));
+            return handler.GetAccessCodesForEvent(id);
+        }
+
+        public AccessCode GetAccessCodeForEvent(long eventId, long accessCodeId)
+        {
+            var handler = (AccessCodeRequestHandler)GetHandler(typeof(AccessCode));
+            return handler.GetAccessCodeForEvent(eventId, accessCodeId);
+        }
+
     }
 }

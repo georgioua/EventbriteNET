@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessCode.cs" />
     <Compile Include="Attendee.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="Collections\PaginatedResponse.Category.cs" />
@@ -48,6 +49,7 @@
     <Compile Include="Event.cs" />
     <Compile Include="Fields.cs" />
     <Compile Include="Format.cs" />
+    <Compile Include="Http\AccessCodeRequestHandler.cs" />
     <Compile Include="Http\AttendeesRequestHandler.cs" />
     <Compile Include="Http\CategoryRequestHander.cs" />
     <Compile Include="Http\UserRequestHander.cs" />
