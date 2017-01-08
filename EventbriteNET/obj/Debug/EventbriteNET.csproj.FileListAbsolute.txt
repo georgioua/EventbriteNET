@@ -11,3 +11,16 @@ C:\Users\ageorgiou\Documents\Visual Studio 2012\Projects\EventbriteNET\Eventbrit
 C:\Users\ageorgiou\Documents\Visual Studio 2012\Projects\EventbriteNET\EventbriteNET\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\ageorgiou\Documents\Visual Studio 2012\Projects\EventbriteNET\EventbriteNET\obj\Debug\EventbriteNET.dll
 C:\Users\ageorgiou\Documents\Visual Studio 2012\Projects\EventbriteNET\EventbriteNET\obj\Debug\EventbriteNET.pdb
+C:\Users\piete\Source\Repos\Temporary\EventbriteNET\bin\Debug\EventbriteNET.dll
+C:\Users\piete\Source\Repos\Temporary\EventbriteNET\bin\Debug\EventbriteNET.pdb
+C:\Users\piete\Source\Repos\Temporary\EventbriteNET\bin\Debug\Newtonsoft.Json.dll
+C:\Users\piete\Source\Repos\Temporary\EventbriteNET\bin\Debug\System.Net.Http.dll
+C:\Users\piete\Source\Repos\Temporary\EventbriteNET\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\piete\Source\Repos\Temporary\EventbriteNET\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\piete\Source\Repos\Temporary\EventbriteNET\bin\Debug\Newtonsoft.Json.xml
+C:\Users\piete\Source\Repos\Temporary\EventbriteNET\bin\Debug\System.Net.Http.xml
+C:\Users\piete\Source\Repos\Temporary\EventbriteNET\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\piete\Source\Repos\Temporary\EventbriteNET\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\piete\Source\Repos\Temporary\EventbriteNET\obj\Debug\EventbriteNET.csprojResolveAssemblyReference.cache
+C:\Users\piete\Source\Repos\Temporary\EventbriteNET\obj\Debug\EventbriteNET.dll
+C:\Users\piete\Source\Repos\Temporary\EventbriteNET\obj\Debug\EventbriteNET.pdb
