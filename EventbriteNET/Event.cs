@@ -69,11 +69,15 @@ namespace EventbriteNET
         public long? SubcategoryId { get; set; }
         [JsonProperty("format_id")]
         public long? FormatId { get; set; }
+        [JsonProperty("logo_id")]
+        public long? LogoId { get; set; }
 
         [JsonProperty("organizer")]
         public Organizer Organizer { get; set; }
         [JsonProperty("venue")]
         public Venue Venue { get; set; }
+        [JsonProperty("logo")]
+        public Image Logo { get; set; }
         [JsonProperty("category")]
         public Category Category { get; set; }
         [JsonProperty("subcategory")]

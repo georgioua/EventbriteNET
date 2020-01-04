@@ -17,13 +17,14 @@ namespace EventbriteNET
         /// </summary>
         public EventbriteContext()
         {
+            this.RequestHandlers[typeof(Organizer).Name] = new OrganizerRequestHander(this) as IRequestHandler;
+            this.RequestHandlers[typeof(Image).Name] = new MediaRequestHander(this) as IRequestHandler;
             this.RequestHandlers[typeof(Category).Name] = new CategoryRequestHander(this) as IRequestHandler;
             this.RequestHandlers[typeof(Event).Name] = new EventRequestHander(this) as IRequestHandler;
             this.RequestHandlers[typeof(TicketClass).Name] = new TicketClassRequestHander(this) as IRequestHandler;
             this.RequestHandlers[typeof(User).Name] = new UserRequestHander(this) as IRequestHandler;
             this.RequestHandlers[typeof(Attendee).Name] = new AttendeesRequestHandler(this) as IRequestHandler;
             this.RequestHandlers[typeof(Venue).Name] = new VenueRequestHandler(this) as IRequestHandler;
-
         }
 
         /// <summary>
@@ -130,6 +131,23 @@ namespace EventbriteNET
             var handler = (EventRequestHander)GetHandler(typeof(Event));
             return handler.GetOwnedEvents();
         }
+
+        /// <summary>
+        /// Get events for the given organizer
+        /// </summary>
+        /// <param name="id">Organizer Id</param>
+        /// <param name="status">Only return events with a specific status set. This should be a comma delimited string of status. Valid status: all, draft, live, canceled, started, ended.</param>
+        /// <param name="orderBy">How to order the results (Valid choices are: start_asc, start_desc, created_asc, or created_desc)</param>
+        /// <param name="dateStart">Only return events with start dates after the given date.</param>
+        /// <param name="dateEnd">Only return events with start dates before the given date.</param>
+        /// <param name="onlyPublic">Only show public events even if viewing your own events.</param>
+        /// <returns>Events corresponding to the parameters if any</returns>
+        public IList<Event> GetOrganizerEvents(long id, StatusOptions[] status = null, OrderOptions[] orderBy = null, DateTime? dateStart = null, DateTime? dateEnd = null, bool? onlyPublic = null)
+        {
+            var handler = (OrganizerRequestHander)GetHandler(typeof(Organizer));
+            return handler.GetOrganizerEvents(id, status, orderBy, dateStart, dateEnd, onlyPublic);
+        }
+
         /// <summary>
         /// Finds appropriate <see cref="IRequestHandler" />
         /// </summary>

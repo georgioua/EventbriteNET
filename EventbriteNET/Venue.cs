@@ -19,6 +19,6 @@ namespace EventbriteNET
         [JsonProperty("latitude")]
         public decimal Latitude { get; set; }
         [JsonProperty("longitude")]
-        public string Longitude { get; set; }
+        public decimal Longitude { get; set; }
     }
 }

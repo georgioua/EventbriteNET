@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/EventbriteNETConsoleTest/obj/Debug
+/.vs/EventbriteNET/v15
+/EventbriteNET/obj/Debug
+/EventbriteNET/bin/Debug
+/EventbriteNET/EventbriteNET.csproj.user
+/EventbriteNETConsoleTest/bin/Debug
+/EventbriteNETConsoleTest/EventbriteNETConsoleTest.csproj.user
+/.vs/EventbriteNET/v14
+/EventbriteNET/bin
+/EventbriteNET/obj
+/EventbriteNETConsoleTest/obj/Release/EventbriteNETConsoleTest.csproj.CoreCompileInputs.cache
+/.vs/EventbriteNET/v16/Server/sqlite3
+.vs/EventbriteNET/v16/.suo
